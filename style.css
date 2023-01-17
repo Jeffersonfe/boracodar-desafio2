@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D9CDF7;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: "A B";
+    align-items: center;
+    height: 100vh;
+    width: max-content;
+    margin: auto;
+}
+
+.sofa {
+    width: 499px;
+
+}
+
+.item {
+    position: relative;
+}
+
+.img360 {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 70px;
+    background-image: url(assets/360image.png);
+    width: 35px;
+    height: 24px;
+    background-repeat: none;
+    background-size: cover;
+}
+
+.closebg {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 70px;
+    background-image: url(assets/close.png);
+    width: 20px;
+    height: 20px;
+    background-repeat: none;
+    background-size: cover;
+    z-index: 2;
+}
+
+.item {
+    grid-area: A;
+}
+
+.descrition {
+    grid-area: B;
+}
+
+#codigo {
+    font-size: 10px;
+}
+
+#preço {
+    font-size: 16px;
+}
+
+#title {
+    font-family: 'Crimson Pro', serif;
+    font-size: 32px;
+    margin: 12px 0px;
+}
+
+button {
+    border: none;
+}
+
+#buttonADD {
+    display: block;
+    background: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    border-radius: 999px;
+    color: #271A45;
+    border: 1px solid #271A45;
+    margin-top: 20px;
+}
